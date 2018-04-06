@@ -1,0 +1,23 @@
+<h1> There are '{{ count }}' words in your text. </h1>
+
+<br />
+
+
+<h2>* Word Count :</h2>
+	{% for word, count_total in sorted_words %}
+		<p> - "{{ word }}" -> is repeated '{{ count_total }}' times </p>  
+	{% endfor %}
+
+<br />
+
+
+<h2>* Your Text :</h2>
+	{{ full_text }}
+
+
+<br />
+<hr />
+<br /><br />
+<button><a href='../'>=> Let's go count a new text! <=</a>	</button>
+<br /><br />
+
